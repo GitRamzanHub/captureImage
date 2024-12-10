@@ -9,4 +9,9 @@ public class HomeController {
     public String home() {
         return "index"; // Refers to index.jsp
     }
+
+    @GetMapping("/home")
+    public String getWeighBridgePage(){
+        return "weighBridge";
+    }
 }
